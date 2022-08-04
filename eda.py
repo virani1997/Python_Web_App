@@ -37,7 +37,7 @@ else:
     if st.button('Press to use example'):
         @st.cache
         def load_data():
-            a = pd.DataFrame(np.random.rand(100, 5),
+            a = pd.DataFrame(np.random.randn(100, 5),
                              columns = ['a', 'b', 'c', 'd', 'e'])
             return a
         df = load_data()
