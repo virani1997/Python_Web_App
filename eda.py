@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
-import seaborn as sns
+#import seaborn as sns
 from pandas_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 
@@ -15,8 +15,8 @@ st.markdown('''
 
 with st.sidebar.header("Upload your dataset(.csv)"):
     uploaded_file = st.sidebar.file_uploader("Upload your dataset", type=["csv", "txt"])
-    df = sns.load_dataset('titanic')
-    st.sidebar.markdown("[Example CSV file](df)")
+    #df = sns.load_dataset('titanic')
+    st.sidebar.markdown("[Example CSV file](https://storage.googleapis.com/download.tensorflow.org/data/iris_training.csv)")
 
 # profiling report for pandas
 
